@@ -1,0 +1,16 @@
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:  20vw 40vw;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  box-shadow: 5px 5px  #646464;
+}
+.timer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
