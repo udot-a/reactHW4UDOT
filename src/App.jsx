@@ -2,6 +2,8 @@ import React from 'react';
 import './main.css';
 import Button from "./Button";
 import Timer from "./Timer";
+import snowflake from './snowflake.png'
+import TimerFC from "./TimerFC";
 
 
 class App extends React.PureComponent {
@@ -16,7 +18,10 @@ class App extends React.PureComponent {
         return (
             <div className="wrapper">
                 <Button clickHandler={this.clickHandler} toggle={this.state.isToggle}/>
-                {this.state.isToggle ? '00:00:00' : <Timer/>}
+                <div className="timer">
+                    <p><img src={snowflake} alt="snowflake" width='30px'/>Cold time:</p>
+                    {this.state.isToggle ? '00:00' : <TimerFC/>}
+                </div>
             </div>
         );
     }
